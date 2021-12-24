@@ -13,6 +13,8 @@
 		183D04E12775A9C000CE95ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183D04DF2775A9C000CE95ED /* Main.storyboard */; };
 		183D04E32775A9C200CE95ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183D04E22775A9C200CE95ED /* Assets.xcassets */; };
 		183D04E62775A9C200CE95ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183D04E42775A9C200CE95ED /* LaunchScreen.storyboard */; };
+		183D050227761BBA00CE95ED /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D050127761BBA00CE95ED /* NetworkClient.swift */; };
+		183D050627761F0500CE95ED /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D050527761F0500CE95ED /* UITableView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		183D04E22775A9C200CE95ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183D04E52775A9C200CE95ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183D04E72775A9C200CE95ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183D050127761BBA00CE95ED /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		183D050527761F0500CE95ED /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		183D04D82775A9C000CE95ED /* TaskYackeen */ = {
 			isa = PBXGroup;
 			children = (
+				183D050427761EF200CE95ED /* Extensions */,
+				183D04FF27761B5C00CE95ED /* Utility */,
 				183D04D92775A9C000CE95ED /* AppDelegate.swift */,
 				183D04DB2775A9C000CE95ED /* SceneDelegate.swift */,
 				183D04DD2775A9C000CE95ED /* ViewController.swift */,
@@ -65,6 +71,30 @@
 				183D04E72775A9C200CE95ED /* Info.plist */,
 			);
 			path = TaskYackeen;
+			sourceTree = "<group>";
+		};
+		183D04FF27761B5C00CE95ED /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				183D050027761BAF00CE95ED /* Network */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		183D050027761BAF00CE95ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				183D050127761BBA00CE95ED /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		183D050427761EF200CE95ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				183D050527761F0500CE95ED /* UITableView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183D050627761F0500CE95ED /* UITableView+Extensions.swift in Sources */,
 				183D04DE2775A9C000CE95ED /* ViewController.swift in Sources */,
 				183D04DA2775A9C000CE95ED /* AppDelegate.swift in Sources */,
 				183D04DC2775A9C000CE95ED /* SceneDelegate.swift in Sources */,
+				183D050227761BBA00CE95ED /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
