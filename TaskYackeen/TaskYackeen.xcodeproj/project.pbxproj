@@ -15,6 +15,10 @@
 		183D04E62775A9C200CE95ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183D04E42775A9C200CE95ED /* LaunchScreen.storyboard */; };
 		183D050227761BBA00CE95ED /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D050127761BBA00CE95ED /* NetworkClient.swift */; };
 		183D050627761F0500CE95ED /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D050527761F0500CE95ED /* UITableView+Extensions.swift */; };
+		183D050D277620D900CE95ED /* ListUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D050B277620D900CE95ED /* ListUserVC.swift */; };
+		183D050E277620D900CE95ED /* ListUserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183D050C277620D900CE95ED /* ListUserVC.xib */; };
+		183D05222776251100CE95ED /* ListUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D05202776251100CE95ED /* ListUserTableViewCell.swift */; };
+		183D05232776251100CE95ED /* ListUserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183D05212776251100CE95ED /* ListUserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		183D04E72775A9C200CE95ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		183D050127761BBA00CE95ED /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		183D050527761F0500CE95ED /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		183D050B277620D900CE95ED /* ListUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserVC.swift; sourceTree = "<group>"; };
+		183D050C277620D900CE95ED /* ListUserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUserVC.xib; sourceTree = "<group>"; };
+		183D05202776251100CE95ED /* ListUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserTableViewCell.swift; sourceTree = "<group>"; };
+		183D05212776251100CE95ED /* ListUserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListUserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		183D04D82775A9C000CE95ED /* TaskYackeen */ = {
 			isa = PBXGroup;
 			children = (
+				183D050827761FD400CE95ED /* Modules */,
 				183D050427761EF200CE95ED /* Extensions */,
 				183D04FF27761B5C00CE95ED /* Utility */,
 				183D04D92775A9C000CE95ED /* AppDelegate.swift */,
@@ -95,6 +104,33 @@
 				183D050527761F0500CE95ED /* UITableView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		183D050827761FD400CE95ED /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				183D050927761FE300CE95ED /* ListUser */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		183D050927761FE300CE95ED /* ListUser */ = {
+			isa = PBXGroup;
+			children = (
+				183D050A2776207B00CE95ED /* ViewController */,
+				183D05202776251100CE95ED /* ListUserTableViewCell.swift */,
+				183D05212776251100CE95ED /* ListUserTableViewCell.xib */,
+			);
+			path = ListUser;
+			sourceTree = "<group>";
+		};
+		183D050A2776207B00CE95ED /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				183D050B277620D900CE95ED /* ListUserVC.swift */,
+				183D050C277620D900CE95ED /* ListUserVC.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +193,8 @@
 				183D04E62775A9C200CE95ED /* LaunchScreen.storyboard in Resources */,
 				183D04E32775A9C200CE95ED /* Assets.xcassets in Resources */,
 				183D04E12775A9C000CE95ED /* Main.storyboard in Resources */,
+				183D050E277620D900CE95ED /* ListUserVC.xib in Resources */,
+				183D05232776251100CE95ED /* ListUserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,8 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				183D050627761F0500CE95ED /* UITableView+Extensions.swift in Sources */,
+				183D05222776251100CE95ED /* ListUserTableViewCell.swift in Sources */,
 				183D04DE2775A9C000CE95ED /* ViewController.swift in Sources */,
 				183D04DA2775A9C000CE95ED /* AppDelegate.swift in Sources */,
+				183D050D277620D900CE95ED /* ListUserVC.swift in Sources */,
 				183D04DC2775A9C000CE95ED /* SceneDelegate.swift in Sources */,
 				183D050227761BBA00CE95ED /* NetworkClient.swift in Sources */,
 			);
