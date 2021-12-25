@@ -9,7 +9,7 @@ import Foundation
 
 
 class NetworkClient {
-    let mainURL = "http://api.tvmaze.com/search/shows?q=Future"
+    let mainURL = "https://api.tvmaze.com/search/shows?q=Future"
     func performRequest<T: Decodable>(_ object: T.Type, completion: @escaping ((Result<T, Error>) -> Void)) {
         URLSession.shared.dataTask(with: URL(string: mainURL)!) { (data, response, error)
             in

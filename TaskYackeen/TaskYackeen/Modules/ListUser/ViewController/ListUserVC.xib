@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListUserVC" customModule="TaskYackeen" customModuleProvider="target">
             <connections>
+                <outlet property="listTableView" destination="EfT-76-dPy" id="MbZ-Xf-Z6c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

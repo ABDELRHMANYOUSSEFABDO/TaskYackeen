@@ -26,3 +26,12 @@ extension UITableView {
     }
         
 }
+extension UITableViewCell {
+    
+    class var identifier: String {
+        return String(describing: self)
+    }
+    static var reuseIdentifier: String {
+           return NSStringFromClass(self)
+       }
+}
