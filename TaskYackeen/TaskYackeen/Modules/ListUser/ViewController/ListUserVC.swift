@@ -24,17 +24,14 @@ class ListUserVC: BaseWireframe<listUserViewModel>{
         viewModel.bind()
         viewModel.DateListObservel.bind( to: listTableView.rx.items(cellIdentifier: "ListUserTableViewCell", cellType: ListUserTableViewCell.self)) {
             row , service ,cell in
-           
             cell.nameLabel.text  = service.show?.name
             cell.RuntimeLabel.text = service.show?.runtime?.description
             print("link",service.show?.url)
             cell.LinkButton.setTitle(service.show?.url, for: .normal)
             cell.premieredLabel.text =  service.show?.premiered
             cell.imageList.loadImage(urlString: service.show?.image?.original ?? "")
-    
-    
+            cell.ratingView.configureWithRating(rating: service.show?.rating.average ?? 0)
             
-
         }.disposed(by: viewModel.disposeBag)
     }
 

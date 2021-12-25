@@ -14,6 +14,7 @@ class ListUserTableViewCell: UITableViewCell {
     
     @IBOutlet var premieredLabel: UILabel!
     
+    @IBOutlet var ratingView: RatingView!
     @IBOutlet var RuntimeLabel: UILabel!
     
     @IBOutlet var LinkButton: UIButton!
@@ -27,5 +28,8 @@ class ListUserTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        ratingView.stackView.removeAllArrangedSubviews()
+    }
 }

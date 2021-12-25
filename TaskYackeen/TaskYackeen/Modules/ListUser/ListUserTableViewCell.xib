@@ -132,6 +132,7 @@
                 <outlet property="imageList" destination="9iX-X5-rF2" id="dM1-pU-fjR"/>
                 <outlet property="nameLabel" destination="oj8-Yj-pYu" id="GJr-Z6-VYJ"/>
                 <outlet property="premieredLabel" destination="ZXA-Gr-CGd" id="F75-JV-lhO"/>
+                <outlet property="ratingView" destination="ycI-EW-Mie" id="skQ-zQ-dwb"/>
             </connections>
             <point key="canvasLocation" x="294.92753623188406" y="150.66964285714286"/>
         </tableViewCell>
