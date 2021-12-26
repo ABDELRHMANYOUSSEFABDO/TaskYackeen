@@ -15,16 +15,16 @@ class listUserViewModel:BaseViewModel{
           }
     let disposeBag = DisposeBag()
 
-    let pizzaRepository: HomeRepository
+    let ListUserRepository: HomeRepository
     init(
          repository: HomeRepository) {
-        self.pizzaRepository = repository
+        self.ListUserRepository = repository
     }
     func viewDidLoad(){
         bind()
     }
     func bind(){
-        pizzaRepository.fetchListData().subscribe(onNext: { [weak self] items in
+        ListUserRepository.fetchListData().subscribe(onNext: { [weak self] items in
             self?.DateList.onNext(items)
             
         }).disposed(by: disposeBag)

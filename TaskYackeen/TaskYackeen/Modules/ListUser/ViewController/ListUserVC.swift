@@ -26,13 +26,22 @@ class ListUserVC: BaseWireframe<listUserViewModel>{
             row , service ,cell in
             cell.nameLabel.text  = service.show?.name
             cell.RuntimeLabel.text = service.show?.runtime?.description
-            print("link",service.show?.url)
             cell.LinkButton.setTitle(service.show?.url, for: .normal)
             cell.premieredLabel.text =  service.show?.premiered
             cell.imageList.loadImage(urlString: service.show?.image?.original ?? "")
             cell.ratingView.configureWithRating(rating: service.show?.rating.average ?? 0)
             
         }.disposed(by: viewModel.disposeBag)
+        
+        
+        listTableView.rx.modelSelected(ListElement.self)
+                   .subscribe(onNext: { [weak self] model in
+                       guard let self = self else { return }
+                       let vc = DetilesUserVc()
+                    vc.summarytext = model.show?.summary ?? ""
+                    vc.imageUrl = model.show?.image?.original ?? ""
+                    self.present(vc, animated: true, completion: nil)
+                   }).disposed(by: disposeBag)
     }
 
 
